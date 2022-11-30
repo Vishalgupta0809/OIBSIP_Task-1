@@ -1,0 +1,183 @@
+<htlm>
+    <title>
+        Food Mela
+    </title>
+
+    <style>
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background : url('img/img5.jpg');
+            /*width: 100%;
+            height: 100%;*/
+        }
+        body url{
+            opacity: 1;
+        }
+        .left{
+            /*border: 2px solid yellow;*/
+            display: inline-block;
+            position: absolute;
+            left : 20px;
+            top : 20px;
+        }
+        .left img{
+            margin: -26px -36px;
+            width: 157px;
+            border-radius: 48px;
+            display: block;  
+        }
+        .left div{
+            text-align: center;
+            font-size: 20px;
+            position: absolute;
+            top: 72px;
+            left: -6px;
+            width: 149%;
+            
+        }
+        
+        .mid{
+            /*border: 2px solid red;*/
+            display: block;
+            width: 44%;
+            margin: 19px auto;
+            font-size: 20px;
+        }
+        .right{
+            /*border: 2px solid green;*/
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            display: inline-block;
+            padding: 22px;   
+        } 
+
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover{
+            text-decoration: underline;  
+        }
+        .right input[type=text]{
+          
+           border: 2px solid gray;
+           border-radius: 12px;
+           padding: 8px;
+
+        }
+        
+        .container{
+            border: 2px solid white;
+            margin: 44px 796px;
+            padding: 23px;
+            width: 33%;
+            border-radius: 25px;    
+        }
+        .container h1{
+            text-align: center;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 453px;
+            padding: 8px;
+            border: 2px solid black;
+            margin: 3px auto;
+            border-radius: 6px;
+        } 
+        .form-group input[type=radio]{
+            width: 105px;
+            display: inline;
+        }
+        .form-group label{
+            font-size: 20px;
+
+        }
+        .btn{
+            background: gray;
+            color: white;
+            padding: 10px;
+            border-radius: 7px;
+            border: solid black;
+            font-size: 18px;
+            display: block;
+            width: 33%;
+            margin: auto;
+        }
+        .btn:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+
+    </style>
+    <body>
+        <header class="header">
+            <!-- Left box for logo -->
+            <div class="left">
+               <img src="img/logo2.png" alt="">
+                <div>Food Mela.com</div>
+                
+
+                </ul>
+            
+            </div>      
+            <div class='mid'>
+                <ul class="navbar">
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> About Us</a></li>
+                    <li><a href="#"> Services</a></li>
+                    <li><a href="#"> Contact Us</a></li>
+                </ul>    
+
+            </div>
+            <div class='right'>
+                <input type="text" placeholder="Search">
+            </div>
+            <div style="position: absolute;
+                        top: 312px;
+                        left: 133px;
+                        font-size: 45px;">
+                        Welcome to Food Mela.com!!</div>
+           
+
+        </header>
+        <div class="container">
+            <h1>Sign Up</h1>
+            <form>
+                <div class="form-group">
+                    <label for ="Name">Enter Name</label><br>
+                    <input type="text" name="Name" placeholder="Enter your Name">
+               </div>
+               <div class="form-group">
+                    <label for ="Gender">Gender:</label><br>
+                    <input type="radio" name="Gender" id="Gender" value="Male">Male
+                    <input type="radio" name="Gender" id="Gender" value="Female">Female
+               </div>
+               <div class="form-group">
+                    <label for ="email">Email Id</label><br>
+                    <input type="text" name="email" placeholder="Enter your Email Id">
+               </div>
+               <div class="form-group">
+                   <label for ="Mobile Number">Mobile Number</label><br>
+                   <input type="text" name="Mobile Number" placeholder="Enter your Mobile Number">
+               </div>
+               <div class="form-group">
+                   <label for ="location">Location</label><br>
+                   <input type="text" name="location" placeholder="Enter your Location">
+               </div>
+            <button class="btn">Submit</button>
+           </form>
+        </div>    
+    </body>
+</htlm>
